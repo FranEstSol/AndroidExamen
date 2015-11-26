@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tonos_array">
+        <item>Classic</item>
+        <item>Marimba</item>
+        <item>Piano</item>
+        <item>Pinball</item>
+    </string-array>
+</resources>

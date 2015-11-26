@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="configuracion"
+        android:title="Configuracion"
+        android:defaultValue=""/>
+    <PreferenceScreen
+        android:key="datos"
+        android:title="Datos"
+        android:defaultValue="">
+        <Preference
+            android:key="datos_anteriores"
+            android:title="Datos anteriores"
+            android:defaultValue=""/>
+        <Preference
+            android:key="datos_actuales"
+            android:title="Datos actuales"
+            android:defaultValue=""/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="preferencias"
+        android:title="Preferencias"
+        android:defaultValue="">
+        <SwitchPreference
+            android:key="wifi"
+            android:title="Wi-Fi"
+            android:defaultValue="false"/>
+        <SwitchPreference
+            android:key="bluetooth"
+            android:title="Bluetooh"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="check_silencio"
+            android:title="Modo silencioso"
+            android:summaryOn="Modo silencioso activado"
+            android:summaryOff="Modo silencioso desactivado"
+            android:defaultValue="false"/>
+        <ListPreference
+            android:key="tono_pref"
+            android:title="Tono"
+            android:summary="%s"
+            android:entries="@array/tonos_array"
+            android:entryValues="@array/tonos_array"
+            android:defaultValue="0"/>
+
+        <PreferenceScreen
+            android:key="avanzadas"
+            android:title="Opciones avanzadas"
+            android:defaultValue="">
+            <Preference
+                android:key="proveedor"
+                android:title="Proveedor"
+                android:defaultValue=""/>
+            <Preference
+                android:key="consumo"
+                android:title="Consumo de datos"
+                android:defaultValue=""/>
+            <Preference
+                android:key="importe"
+                android:title="Importe"
+                android:defaultValue=""/>
+        </PreferenceScreen>
+    </PreferenceScreen>
+</PreferenceScreen>
